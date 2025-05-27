@@ -1,0 +1,4 @@
+def smash(words):
+    res = ' '.join(str(x) for x in words)
+    return res
+    
