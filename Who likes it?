@@ -13,4 +13,4 @@ def likes(names):
         return names[0] + ", " + names[1] + ' and ' + str(two) + ' others like this'
 
 # This is really really fucked
-# https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/python
+# https://www.codewars.com/kata/5266876b8f4bf2da9b000362/python
