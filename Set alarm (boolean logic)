@@ -1,0 +1,6 @@
+def set_alarm(employed, vacation):
+    return True if employed and not vacation else False 
+#okay taking a second look at this the "True" and "else False" is litterally unnecessary 
+
+# lowkey a shitty problem to add here but whatever most of them are shitty
+# https://www.codewars.com/kata/568dcc3c7f12767a62000038/python
