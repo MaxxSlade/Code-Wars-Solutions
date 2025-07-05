@@ -1,0 +1,6 @@
+def find_short(s):
+    sorted = s.split()
+    lengths = [len(x) for x in sorted]
+    return min(lengths)
+
+# https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/python
