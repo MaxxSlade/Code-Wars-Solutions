@@ -1,0 +1,7 @@
+def count_by(x, n):
+    res = []
+    for f in range(n+1)[1:]:
+        res.append(f * x)
+    return res
+
+# https://www.codewars.com/kata/5513795bd3fafb56c200049e/python
