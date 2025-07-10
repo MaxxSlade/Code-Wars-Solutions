@@ -1,0 +1,8 @@
+def correct(s):
+    fix = str.maketrans('501', 'SOI')
+    return s.translate(fix)
+
+# https://www.codewars.com/kata/577bd026df78c19bca0002c0/python
+
+def correct(s):
+    return s.translate(str.maketrans('501', 'SOI'))
