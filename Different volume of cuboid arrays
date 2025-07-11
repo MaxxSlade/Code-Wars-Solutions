@@ -1,0 +1,14 @@
+def find_difference(a, b):
+    ar = 1
+    br = 1
+    for x in a:
+        ar *= x
+        
+    for z in b:
+        br *= z
+    
+    
+    return ar - br if ar - br >=  0 else br - ar
+
+# https://www.codewars.com/kata/58cb43f4256836ed95000f97/python
+    
