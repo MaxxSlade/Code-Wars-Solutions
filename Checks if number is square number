@@ -1,0 +1,12 @@
+import math
+def is_square(n):
+    answer = 0
+    if n >= 0:
+        answer += math.sqrt(n)
+    elif n == 0:
+        return True
+    
+    return answer.is_integer() if n >= 0 else False
+
+# so fugly
+# https://www.codewars.com/kata/54c27a33fb7da0db0100040e/python
