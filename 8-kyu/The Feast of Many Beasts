@@ -5,3 +5,4 @@ def feast(beast, dish):
         return False
 
 # This is lowkey a fucked way of doing it
+# https://www.codewars.com/kata/5aa736a455f906981800360d
