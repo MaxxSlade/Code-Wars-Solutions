@@ -1,0 +1,5 @@
+def sum_mix(arr):
+    nums = [int(x) for x in arr]
+    return sum(nums)
+
+    # https://www.codewars.com/kata/57eaeb9578748ff92a000009/python
