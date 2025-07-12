@@ -2,3 +2,4 @@ def smash(words):
     res = ' '.join(str(x) for x in words)
     return res
     
+#  https://www.codewars.com/kata/53dc23c68a0c93699800041d
