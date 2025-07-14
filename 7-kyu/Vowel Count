@@ -1,0 +1,9 @@
+def get_count(sentence):
+    vowels = 'aeiou'
+    count = 0
+    for x in sentence:
+        count += 1 if x in vowels else 0
+    return count
+
+
+# https://www.codewars.com/kata/54ff3102c1bad923760001f3/python
