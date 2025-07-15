@@ -1,0 +1,34 @@
+def make_readable(seconds):
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    secondsr = (seconds % 60)
+    
+    sh = ''
+    sm = ''
+    ss = ''
+ 
+    if int(hours) <= 0:
+        sh += '00'
+    elif hours > 0 and hours < 10:
+        sh += '0' + str(hours)
+    elif hours >= 10 and hours < 100:
+        sh += str(hours)
+    
+    if minutes > 0 and minutes < 10:
+        sm += '0' + str(minutes)
+    elif minutes >= 10 and minutes < 60:
+        sm += str(minutes)
+    else:
+        sm += '00'
+    
+    if secondsr > 0 and secondsr < 10:
+        ss += '0' + str(secondsr)
+    elif secondsr >= 10 and secondsr < 60:
+        ss += str(secondsr)
+    else:
+        ss += '00'
+    
+    return f'{sh}:{sm}:{ss}'
+
+    # Yandere dev code </3
+    # https://www.codewars.com/kata/52685f7382004e774f0001f7/python
