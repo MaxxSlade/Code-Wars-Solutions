@@ -1,0 +1,16 @@
+def bouncing_ball(h, bounce, window):
+    count = 1
+    if window >= h:
+        return -1
+    elif bounce >= 1 or bounce < 0:
+        return -1
+    elif h <= 0:
+        return -1
+    else:
+        while bounce * h > window:
+            count += 2
+            h *= bounce
+    return count
+
+# Very Very ugly -- Idc tho I'm still posting it :3
+# https://www.codewars.com/kata/5544c7a5cb454edb3c000047/python
