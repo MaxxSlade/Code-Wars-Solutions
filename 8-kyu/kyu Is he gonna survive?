@@ -1,0 +1,4 @@
+def hero(bullets, dragons):
+    return True if bullets / dragons >= 2 and bullets > 0 and dragons > 0 else False
+
+# https://www.codewars.com/kata/59ca8246d751df55cc00014c/python
