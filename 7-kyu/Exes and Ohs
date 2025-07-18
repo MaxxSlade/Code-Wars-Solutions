@@ -1,0 +1,14 @@
+def xo(s):
+    xc = 0
+    oc = 0
+    for x in s:
+        if x.lower() == 'o':
+            oc += 1
+        elif x.lower() == 'x':
+            xc += 1
+    
+    if xc == oc:
+        return True
+    else:
+        return False
+        
