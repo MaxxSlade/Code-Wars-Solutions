@@ -12,3 +12,5 @@ def xo(s):
     else:
         return False
         
+# very ugly but I first tried it
+# https://www.codewars.com/kata/55908aad6620c066bc00002a/python
