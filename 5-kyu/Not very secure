@@ -1,0 +1,14 @@
+def alphanumeric(password):
+    if not password:
+        return False
+    allowed = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    letters = [str(x) for x in password]
+    al = [x for x in letters if x in allowed]
+    for x in letters:
+        if str(x) not in allowed:
+            return False
+        elif len(letters) == len(al):
+            return True
+
+# I over complicated the fuck out of this -- apparently python has a isalnum() function </3
+# https://www.codewars.com/kata/526dbd6c8c0eb53254000110/python
