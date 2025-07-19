@@ -1,0 +1,5 @@
+def dna_to_rna(dna):
+    table = str.maketrans("T", "U")
+    return dna.translate(table)
+
+# https://www.codewars.com/kata/5556282156230d0e5e000089/python
