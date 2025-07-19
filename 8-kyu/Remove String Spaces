@@ -1,0 +1,5 @@
+def no_space(x):
+    space = ' '
+    return ''.join([i for i in x if i not in space])
+
+# https://www.codewars.com/kata/57eae20f5500ad98e50002c5/python
