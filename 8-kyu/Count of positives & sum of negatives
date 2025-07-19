@@ -1,0 +1,12 @@
+def count_positives_sum_negatives(arr):
+    
+    positives = [x for x in arr if x > 0]
+    negatives = sum([int(x) for x in arr if x < 0])
+    return [len(positives), negatives] if arr else []
+
+# For some reason this one kinda stumped me for a bit
+# https://www.codewars.com/kata/576bb71bbbcf0951d5000044/python
+# revised code below 
+
+def count_positives_sum_negatives(arr):
+    return [len([int(x) for x in arr if x > 0]), sum([x for x in arr if x < 0])] if arr else []
