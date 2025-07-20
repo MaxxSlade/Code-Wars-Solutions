@@ -1,0 +1,7 @@
+def two_sum(numbers, target):
+    for x in range(len(numbers)):
+        for j in range(x + 1, len(numbers)):
+            if numbers[x] + numbers[j] == target:
+                return (x, j)
+
+# https://www.codewars.com/kata/52c31f8e6605bcc646000082/python
