@@ -1,0 +1,15 @@
+def is_pangram(st):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    upalpha = alpha.upper()
+    lets = ''
+    for x in st:
+        if x in alpha or x in upalpha:
+            lets += x.lower()
+    return True if len(set(lets)) == 26 else False
+_____________________________________________________________
+
+    return True if len(set(''.join(x.lower() for x in st if x.isalpha()))) == 26 else False
+
+
+
+# https://www.codewars.com/kata/545cedaa9943f7fe7b000048/python
