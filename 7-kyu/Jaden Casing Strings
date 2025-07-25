@@ -1,0 +1,9 @@
+def to_jaden_case(string):
+    cap = [x.lower() for x in string.split()]
+    return ' '.join([i.upper()[0] + i[1:] for i in cap])
+----------------------------------------------------------------
+
+def to_jaden_case(string):
+    return ' '.join([i.upper()[0] + i[1:] for i in [x.lower() for x in string.split()]])
+
+https://www.codewars.com/kata/5390bac347d09b7da40006f6/python
