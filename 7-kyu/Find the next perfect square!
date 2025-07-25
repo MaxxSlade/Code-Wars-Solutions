@@ -1,0 +1,5 @@
+import math
+def find_next_square(sq):
+    return (math.sqrt(sq) + 1) ** 2 if math.floor(math.sqrt(sq)) == math.ceil(math.sqrt(sq)) else -1
+
+# https://www.codewars.com/kata/56269eb78ad2e4ced1000013/python
