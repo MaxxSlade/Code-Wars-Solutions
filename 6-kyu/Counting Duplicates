@@ -1,0 +1,14 @@
+def duplicate_count(text):
+    count = {}
+    duplicates = 0
+    for x in text.lower():
+        if not x in count:
+            count[x] = 1
+        else:
+            count[x] += 1
+    for i in count.values():
+        if i > 1:
+            duplicates += 1
+    return duplicates
+
+# https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/python
