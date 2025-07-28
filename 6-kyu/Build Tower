@@ -1,0 +1,11 @@
+def tower_builder(n_floors):
+    arr = []
+    num = 1
+    total = n_floors - 1
+    while len(arr) < n_floors:
+            arr.append((total)*' ' + ('*'*num) + ' '*(total))
+            num += 2
+            total -= 1
+    return arr
+
+# https://www.codewars.com/kata/576757b1df89ecf5bd00073b/python
