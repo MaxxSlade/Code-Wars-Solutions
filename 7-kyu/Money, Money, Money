@@ -1,0 +1,12 @@
+def calculate_years(principal, interest, tax, desired):
+    count = 0
+    if principal >= desired:
+        return count
+    else:
+        while principal < desired:
+            principal += ((principal*interest) - (principal*interest*tax))
+            count += 1
+            if principal >= desired:
+                return count
+
+# https://www.codewars.com/kata/563f037412e5ada593000114/solutions/python
