@@ -1,0 +1,13 @@
+def declare_winner(f1, f2, fa):
+    first = f1 if f1.name == fa else f2
+    second = f1 if f1.name != fa else f2
+    
+    while f1.health > 0 and f2.health > 0:
+        second.health -= first.damage_per_attack
+        if second.health <= 0:
+            return first.name
+        first.health -= second.damage_per_attack
+        if first.health <= 0:
+            return second.name
+
+# https://www.codewars.com/kata/577bd8d4ae2807c64b00045b/python
