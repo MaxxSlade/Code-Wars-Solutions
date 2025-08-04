@@ -1,0 +1,16 @@
+def solve(s):
+    lc = 0
+    uc = 0
+    for x in s:
+        if x == x.upper():
+            uc += 1
+        elif x == x.lower():
+            lc += 1
+    
+    if uc > lc:
+        return s.upper()
+    else:
+        return s.lower()
+
+
+# https://www.codewars.com/kata/5b180e9fedaa564a7000009a/python
