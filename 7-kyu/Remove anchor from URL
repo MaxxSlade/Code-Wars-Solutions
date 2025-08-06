@@ -1,0 +1,4 @@
+def remove_url_anchor(url):
+    return url if url.find('#') == -1 else url[:url.find('#')]
+
+# https://www.codewars.com/kata/51f2b4448cadf20ed0000386/python
