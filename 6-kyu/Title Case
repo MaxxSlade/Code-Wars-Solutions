@@ -1,0 +1,9 @@
+def title_case(title, minor_words=''):
+    titl = [x.title() for x in title.split()]
+    for i in titl:
+        if i.lower() in minor_words.lower().split():
+            titl[titl.index(i)] = i.lower()
+    res = ' '.join(titl)
+    return res[:1].upper() + res[1:]
+
+# https://www.codewars.com/kata/5202ef17a402dd033c000009/python
