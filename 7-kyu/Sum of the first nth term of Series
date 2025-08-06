@@ -1,0 +1,9 @@
+def series_sum(n):
+    answ = 0
+    div = 1
+    for i in range(1, n+1):
+        answ += 1/div
+        div += 3
+    return f"{answ:.2f}"
+
+# https://www.codewars.com/kata/555eded1ad94b00403000071/python
