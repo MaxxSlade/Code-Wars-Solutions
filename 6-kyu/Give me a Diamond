@@ -1,0 +1,27 @@
+def diamond(n):
+    if n <= 0 or n%2 == 0:
+        return None
+    elif n == 1:
+        return '*\n'
+    diamond = ''
+    mid = '*'*n + '\n'
+    num = 1
+    space = int(n/2)
+    total = int(n/2)
+    for i in range(1, n+1):
+        print(i)
+        if i < total+1:
+            diamond += ' '*space + '*'*num + '\n'
+            space -= 1
+            num += 2
+        elif i == total+1:
+            diamond += '*'*n + '\n'
+            space += 1
+            num -= 2
+        else:
+            diamond += ' '*space + '*'*num + '\n'
+            space += 1
+            num -= 2
+    return diamond
+# Might be one of my shittiest solutions but I got bored of this problem sooo
+# https://www.codewars.com/kata/5503013e34137eeeaa001648/python
