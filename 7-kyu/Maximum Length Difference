@@ -1,0 +1,14 @@
+def mxdiflg(a1, a2):
+    if a1 == [] or a2 == []:
+        return -1
+    smallest1 = min([len(x) for x in a1])
+    largest1 = max([len(x) for x in a1])
+    smallest2 = min([len(x) for x in a2])
+    largest2 = max([len(x) for x in a2])
+    
+    if largest1 - smallest2 >= largest2 - smallest1:
+        return largest1 - smallest2
+    else:
+        return largest2 - smallest1
+
+# https://www.codewars.com/kata/5663f5305102699bad000056/python
