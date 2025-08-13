@@ -1,0 +1,22 @@
+def sum_dig_pow(a, b):
+    lis = []
+    res = []
+    for i in range(a, b+1):
+        lis.append(str(i))
+    
+    for n in lis:
+        if len(n) < 2:
+            res.append(int(n))
+        elif len(n) >= 2:
+            digs = [int(d) for d in str(n)]
+            num = 0
+            p = 1
+            for i in range(len(n)):
+                num += int(digs[i])**p
+                p += 1
+            if num == int(n):
+                res.append(num)
+    return res
+
+
+# This might be the shittiest code I've actually submitted here...
