@@ -1,0 +1,11 @@
+def row_weights(array):
+    one = 0
+    two = 0
+    for x,i in enumerate(array):
+        if x%2 == 0:
+            one += i
+        else:
+            two += i
+    return (one, two)
+
+# https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/python
