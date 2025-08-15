@@ -1,0 +1,10 @@
+def pig_it(text):
+    pigtext = ''
+    for x in text.split():
+        if x == '?' or x == '!':
+            pigtext += x + ' '
+        else:
+            pigtext += x[1:] + x[0] + 'ay '
+    return pigtext[:-1]
+
+# https://www.codewars.com/kata/520b9d2ad5c005041100000f/python
