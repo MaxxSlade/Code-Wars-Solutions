@@ -1,0 +1,16 @@
+def move_zeros(lst): 
+    noz = [x for x in lst if x != 0]
+    count = len(lst) - len(noz)   
+    
+    while count != 0:
+        noz.append(0)
+        count -= 1
+    return noz
+__________________________________________
+def move_zeros(lst): 
+    noz = [x for x in lst if x != 0]
+    count = len(lst) - len(noz)   
+    noz.extend([0]*count)
+    return noz
+
+# https://www.codewars.com/kata/52597aa56021e91c93000cb0/python
