@@ -1,0 +1,11 @@
+def solution(number):
+    final = 0
+    for i in range(number):
+        if i%3 == 0 or i%5 == 0:
+            final += i
+    return final
+  ______________________________________________
+def solution(number):
+    return sum([x for x in range(number) if x%3 == 0 or x%5 == 0])
+
+# https://www.codewars.com/kata/514b92a657cdc65150000006/python
