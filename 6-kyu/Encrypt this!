@@ -1,0 +1,16 @@
+def encrypt_this(text):
+    final = ''
+    for x in text.split():
+        l = len(x)
+        if l == 1:
+            final += str(ord(x[0])) + ' '
+        elif l == 2:
+            final += str(ord(x[0])) + x[-1] + ' '
+        else:
+            final += str(ord(x[0]))
+            final += x[-1]
+            final += x[2:l-1] + x[1:2] + ' '
+    return final[:-1]
+
+# https://www.codewars.com/kata/5848565e273af816fb000449/python
+# Didn't feel like refactoring so I'm just submitting this shitting code
