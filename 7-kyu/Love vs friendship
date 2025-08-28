@@ -1,0 +1,14 @@
+def words_to_marks(s):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    sum = 0
+    for i in s:
+        sum += alpha.index(i)+1
+    return sum
+--------------------------------------------------------
+def words_to_marks(s):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    return sum(alpha.index(x)+1 for x in s)
+
+
+# Finally a new solution decent too. (imo)
+# 
