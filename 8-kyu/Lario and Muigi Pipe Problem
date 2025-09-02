@@ -1,0 +1,7 @@
+def pipe_fix(nums):
+    arr = []
+    for i in range(min(nums), max(nums)+1):
+        arr.append(i)
+    return arr
+
+# https://www.codewars.com/kata/56b29582461215098d00000f/solutions/python
