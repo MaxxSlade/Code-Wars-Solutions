@@ -1,0 +1,12 @@
+def sort_array(source_array):
+    odd = sorted([x for x in source_array if x%2 == 1])
+    array = []
+    for i in source_array:
+        if i%2 == 1:
+            array.append(odd[0])
+            odd.pop(0)
+        else:
+            array.append(i)
+    return array
+
+# https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/python
