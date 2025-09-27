@@ -1,0 +1,10 @@
+def remove(st):
+    count = 0
+    for i in st[::-1]:
+        if i == '!':
+            count += 1
+        elif i != '!':
+            break
+    return st[:-count] if count > 0 else st
+
+# https://www.codewars.com/kata/57faece99610ced690000165/python
