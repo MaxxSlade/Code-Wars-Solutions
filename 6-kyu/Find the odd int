@@ -1,0 +1,12 @@
+def find_it(seq):
+    count = {}
+    for x in seq:
+        if not x in count:
+            count[x] = 1
+        else:
+            count[x] += 1
+    for i in count:
+        if count[i] % 2 == 1 or count[i] == 1:
+            return i
+
+# https://www.codewars.com/kata/54da5a58ea159efa38000836/python
