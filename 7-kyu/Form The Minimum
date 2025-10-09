@@ -1,0 +1,8 @@
+def min_value(digits):
+    nums = ''
+    for i in sorted(digits):
+        if not str(i) in nums:
+            nums += str(i)
+    return int(nums)
+
+# https://www.codewars.com/kata/5ac6932b2f317b96980000ca/python
