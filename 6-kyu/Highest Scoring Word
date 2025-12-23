@@ -1,0 +1,10 @@
+def high(x):
+    arr = []
+    x = x.split()
+    for i in x:
+        num = 0
+        for y in i:
+            num += ord(y.lower())-96
+        arr.append(num)
+    return x[arr.index(max(arr))]
+        
