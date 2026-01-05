@@ -1,0 +1,27 @@
+#Inefficient sequence:
+def recaman(n):
+    nums = []
+    num = 0
+    for i in range(0,n+1):
+        if num-i not in nums and num - i > 0:
+            nums.append(num-i)
+            num = num-i
+        else:
+            nums.append(num+i)
+            num = num+i
+    return num
+
+# More efficient:
+def recaman(n):
+    nums = {0}
+    num = 0
+    
+    for i in range(1,n+1):
+        pos = num-i
+        if pos > 0 and pos not in nums:
+            num = pos
+        else:
+            num = num+i
+        nums.add(num)
+        
+    return num
