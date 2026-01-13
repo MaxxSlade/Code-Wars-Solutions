@@ -1,0 +1,11 @@
+int summation(int number) {
+  
+  int result = 0;
+  int x;
+  
+  for(x = 0; x <= number; x++){
+    result += x; 
+  }
+  
+  return result;
+}
