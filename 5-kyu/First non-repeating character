@@ -1,0 +1,17 @@
+def first_non_repeating_letter(s):
+    lower = ""
+    fnrl = []
+    for x in s:
+        if x.isalpha():
+            lower += x.lower()
+        else:
+            lower += x
+            
+    for i, x in enumerate(lower):
+        if lower.count(x) == 1:
+            fnrl.append(i)
+    
+    return s[fnrl[0]] if fnrl else ''
+
+
+    
