@@ -1,0 +1,12 @@
+def filter_string(st):
+    nums = '1234567890'
+    filtered = ''
+    for i in st:
+        if i in nums:
+            filtered += i
+    
+    return int(filtered)
+-------------------------------------------------------------
+def filter_string(st):
+    nums = '1234567890'
+    return int(''.join(x for x in st if x in nums))
