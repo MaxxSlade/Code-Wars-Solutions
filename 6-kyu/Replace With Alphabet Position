@@ -12,3 +12,12 @@ def alphabet_position(text):
 
 
 # https://www.codewars.com/kata/546f922b54af40e1e90001da/python
+----------------------------------------------------------------------
+#tf was I doing in the previous submission? 
+
+def alphabet_position(text):
+    final = ''
+    for i in text.lower():
+        if i.isalpha():
+            final += str(ord(i)-96) + ' '
+    return final[:-1]
