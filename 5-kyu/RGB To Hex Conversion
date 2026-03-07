@@ -1,0 +1,15 @@
+def rgb(r, g, b):   
+    def th(input):
+        if input <= 0:
+            return '00'
+        elif input > 255:
+            return 'FF'
+        elif len(hex(input)[2:]) == 1:
+            return f'0{(hex(input)[2:]).upper()}'
+        else:
+            return (hex(input)[2:]).upper()
+    
+    return f'{th(r)}{th(g)}{th(b)}'
+
+#Yeah I forgot I could format lmao 
+    
