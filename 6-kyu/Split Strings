@@ -1,0 +1,18 @@
+def solution(s):
+    if len(s) % 2 != 0:
+        s += '_'
+        res = [s[x:x+2] for x in range(0, len(s), 2)]
+        return res
+    else:
+        res = [s[x:x+2] for x in range(0, len(s), 2)]
+        return res
+
+# https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/solutions/python
+-------------------------------------------------------------
+#refactored solution to make it simpler 
+def solution(s):
+    if len(s) % 2 != 0:
+        s += '_'
+    
+    return [s[x:x+2] for x in range(0, len(s), 2)]
+    
