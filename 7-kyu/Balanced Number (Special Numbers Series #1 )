@@ -1,0 +1,29 @@
+def balanced_num(number):
+    number = str(number)
+    if len(number) <= 2:
+        return "Balanced"
+    elif len(number) % 2 == 1:
+        mid = int(len(number)/2)
+        sumleft = 0
+        sumright = 0
+        
+        for x in range(len(number)):
+            if x < mid:
+                sumleft += int(number[x])
+            elif x > mid:
+                sumright += int(number[x])
+        return "Balanced" if sumleft == sumright else "Not Balanced"
+    else:
+        mid1 = int(len(number)/2)
+        mid2 = mid1+1
+        sumleft = 0
+        sumright = 0
+        
+        for x in range(len(number)):
+            if x+1 < mid1:
+                sumleft += int(number[x])
+            elif x+1 > mid2:
+                sumright += int(number[x])
+
+        return "Balanced" if sumleft == sumright else "Not Balanced"
+        
