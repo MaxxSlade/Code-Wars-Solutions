@@ -1,0 +1,23 @@
+def increment_string(string):
+    word = ""
+    num = ""
+    for i, x in enumerate(string[::-1]):
+        if string.isdigit():
+            num += string
+            break
+        elif x.isdigit():
+            num += x
+        else:
+            word = string[0:-i]
+            num = num[::-1]
+            break
+
+    try:
+        numinc = str(int(num)+1)
+
+        if len(numinc) < len(num):
+            return (f"{word}{num[0:-(len(numinc))]}{numinc}")
+        else:
+            return f"{word}{numinc}"
+    except:
+        return f"{string}1"
